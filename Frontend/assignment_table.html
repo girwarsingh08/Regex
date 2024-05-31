@@ -1,0 +1,73 @@
+<!-- Tables are used to represent real life table data.
+<tr> used to display table row
+<td> used to display table data
+<th> used to display table header
+
+Caption in Tables
+<caption> Student Data </caption>
+
+thead & tbody in Tables
+<thead> to wrap table head
+<tbody> to wrap table body
+
+colspan attribute
+colspan="n"
+used to create cells which spans over multiple columns -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00am</td>
+            <td rowspan="2">5:00pm</td>
+            <td>Introduction to XML</td>
+            <tr>
+                <td colspan="2">Validity:DTD and Relax NG</td>
+            </tr>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00am</td>
+            <td>11:00am</td>
+            <td rowspan="2">XPath</td>
+            <tr>
+                <td>11:00am</td>
+                <td>2:00pm</td>
+            </tr> 
+            <tr>
+                <td>2:00pm</td>
+                <td>5:00pm</td>
+                <td>XSL Transformation</td>
+            </tr>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00am</td>
+            <td>12:00pm</td>
+            <td>XSL Formatting Objects</td>  
+        </tr>
+
+    </table>
+    
+</body>
+</html>

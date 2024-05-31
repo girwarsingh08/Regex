@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croma AC Deals</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        .header .menu {
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .header .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .header .location,
+        .header .user,
+        .header .cart {
+            font-size: 1em;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .banner {
+            background: url('https://via.placeholder.com/1600x600') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .banner p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .banner .shop-now {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #00b894;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .featured-products,
+        .categories,
+        .promotional-banners {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product,
+        .category,
+        .promo {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 280px;
+            text-align: left;
+        }
+        .product img,
+        .category img,
+        .promo img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3,
+        .category h3,
+        .promo h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .product p,
+        .category p,
+        .promo p {
+            font-size: 1.1em;
+            color: #666;
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0;
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">croma</div>
+        <div class="menu">Menu</div>
+        <div class="search-bar">
+            <input type="text" placeholder="What are you looking for?">
+        </div>
+        <div class="location">Mumbai, 400049</div>
+        <div class="user">User</div>
+        <div class="cart">Cart</div>
+    </div>
+
+    <div class="banner">
+        <h1>Coolest Deals on ACs</h1>
+        <p>Starting at ₹24,490*</p>
+        <a href="#" class="shop-now">Shop now</a>
+    </div>
+
+    <div class="section">
+        <h2>Featured Products</h2>
+        <div class="featured-products">
+            <div class="product">
+                <img src="https://via.placeholder.com/280x180" alt="Product Image 1">
+                <h3>Product 1</h3>
+                <p>Description of Product 1</p>
+                <p class="price">₹24,490</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/280x180" alt="Product Image 2">
+                <h3>Product 2</h3>
+                <p>Description of Product 2</p>
+                <p class="price">₹26,990</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/280x180" alt="Product Image 3">
+                <h3>Product 3</h3>
+                <p>Description of Product 3</p>
+                <p class="price">₹29,490</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" style="background-color: #f2f2f2;">
+        <h2>Categories</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="https://via.placeholder.com/280x180" alt="Category Image 1">
+                <h3>Category 1</h3>
+                <p>Description of Category 1</p>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/280x180" alt="Category Image 2">
+                <h3>Category 2</h3>
+                <p>Description of Category 2</p>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/280x180" alt="Category Image 3">
+                <h3>Category 3</h3>
+                <p>Description of Category 3</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Promotional Banners</h2>
+        <div class="promotional-banners">
+            <div class="promo">
+                <img src="https://via.placeholder.com/280x180" alt="Promo Image 1">
+                <h3>Promo 1</h3>
+                <p>Description of Promo 1</p>
+            </div>
+            <div class="promo">
+                <img src="https://via.placeholder.com/280x180" alt="Promo Image 2">
+                <h3>Promo 2</h3>
+                <p>Description of Promo 2</p>
+            </div>
+            <div class="promo">
+                <img src="https://via.placeholder.com/280x180" alt="Promo Image 3">
+                <h3>Promo 3</h3>
+                <p>Description of Promo 3</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Croma. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

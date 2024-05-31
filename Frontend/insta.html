@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croma Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .navbar {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .navbar img {
+            height: 40px;
+        }
+        .navbar input[type="search"] {
+            width: 400px;
+            padding: 5px;
+        }
+        .navbar .location,
+        .navbar .user,
+        .navbar .cart {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar .icon {
+            width: 20px;
+            height: 20px;
+        }
+        .hero {
+            position: relative;
+            background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+            height: 600px;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .hero button {
+            padding: 15px 30px;
+            background-color: #00bfa5;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #008f7e;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://via.placeholder.com/100x40" alt="Croma Logo">
+        <input type="search" placeholder="What are you looking for ?">
+        <div class="location">
+            <img src="https://via.placeholder.com/20" alt="Location Icon" class="icon">
+            <span>Mumbai, 400049</span>
+        </div>
+        <div class="user">
+            <img src="https://via.placeholder.com/20" alt="User Icon" class="icon">
+            <span>Account</span>
+        </div>
+        <div class="cart">
+            <img src="https://via.placeholder.com/20" alt="Cart Icon" class="icon">
+            <span>Cart</span>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Coolest Deals on ACs</h1>
+        <p>Starting at ₹24,490*<br>*Extra Up to ₹6,500 Off on Exchange</p>
+        <button>Shop now</button>
+    </div>
+
+    <div class="main-content">
+        <div class="section">
+            <h2>Featured Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/300" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Price: ₹10,000</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/300" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>Price: ₹20,000</p>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/300" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>Price: ₹30,000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Categories</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://via.placeholder.com/300" alt="Category 1">
+                    <h3>Category 1</h3>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/300" alt="Category 2">
+                    <h3>Category 2</h3>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/300" alt="Category 3">
+                    <h3>Category 3</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Croma. All rights reserved.</p>
+    </div>
+</body>
+</html>

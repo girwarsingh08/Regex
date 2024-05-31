@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* position: fixed; */
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+        }
+        .header{
+            position:absolute;
+            background-color: white;
+            color: black;
+            height: 100px;
+            padding-left: 60px;
+            padding-top: 25px;
+            width: 100%;
+            font-size: 40px;
+            letter-spacing: 12px;
+        }
+        .l1{
+            position:absolute;
+            font-size: 40px;
+            color: black;
+            right: 500px;
+            padding-left: 60px;
+            padding-top: 25px;
+        }
+        .l2{
+            position:absolute;
+            font-size: 40px;
+            color: black;
+            right: 300px;
+            padding-left: 60px;
+            padding-top: 25px;
+        }
+        .l3{
+            position:absolute;
+            font-size: 40px;
+            color: black;
+            right: 90px;
+            padding-left: 60px;
+            padding-top: 25px;
+        }
+        .img1{
+            position: absolute;
+            top: 100px;
+            height: 778px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+        }
+        .text{
+            position:absolute;
+            color: white;
+            font-size: 90px;
+            letter-spacing: 15px;
+        }
+        .projects{
+            position:absolute;
+            top: 950px;
+            color: black;
+            font-size: 50px;
+            margin-left: 60px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .imag1{
+            position: absolute;
+            top: 100px;
+        }
+        .imag2{
+            position: absolute;
+            top: 100px;
+            left:445px;
+        }
+        .imag3{
+            position: absolute;
+            top: 100px;
+            left:890px;
+        }
+        .imag4{
+            position: absolute;
+            top: 100px;
+            left:1335px;
+        }
+        .imag5{
+            position: absolute;
+            top: 480px;
+        }
+        .imag6{
+            position: absolute;
+            top: 480px;
+            left:445px;
+        }
+        .imag7{
+            position: absolute;
+            top: 480px;
+            left:890px;
+        }
+        .imag8{
+            position: absolute;
+            top: 480px;
+            left:1335px;
+        }
+        .about{
+            position:absolute;
+            top: 1850px;
+            color: black;
+            font-size: 50px;
+            margin-left: 60px;
+        }
+        .para{
+           
+            font-size: 30px;
+        }
+        .box{
+            position: absolute;
+            height: 450px;
+            width: 420px;
+            background-color: black;
+            margin: 5px;
+            color: white;
+            /* left: 10px; */
+        }
+        .image
+        {
+            position: absolute;
+            top: 0px;
+            height: 50%;
+            left: 0px;
+            background-color: white;
+        }
+        .content{
+            position: absolute;
+            top: 480px;
+            height: 35%;
+            background-color: white;
+            text-align: left;
+            font-size: 22px;
+            color:black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box1{
+            position: absolute;
+            height: 450px;
+            width: 420px;
+            background-color: black;
+            margin: 5px;
+            color: white;
+            left: 440px;
+        }
+        .image1
+        {
+            position: absolute;
+            top: 0px;
+            height: 50%;
+            background-color: white;
+        }
+        .box2{
+            position: absolute;
+            height: 450px;
+            width: 420px;
+            background-color: black;
+            margin: 5px;
+            color: white;
+            left: 880px;
+        }
+        .image2
+        {
+            position: absolute;
+            top: 0px;
+            height: 50%;
+            background-color: white;
+        }
+        .box3{
+            position: absolute;
+            height: 450px;
+            width: 420px;
+            background-color: black;
+            margin: 5px;
+            color: white;
+            left: 1320px;
+        }
+        .image3
+        {
+            position: absolute;
+            top: 0px;
+            height: 50%;
+            background-color: white;
+        }
+        .line1{
+            position: absolute;
+            font-size: 60px;
+            top: 3000px;
+            margin-left: 60px;
+        }
+        .line2{
+            position: absolute;
+            font-size: 35px;
+            top: 3100px;
+            margin-left: 60px;
+        }
+        .b1{
+            position: absolute;
+            background-color: white;
+            color: rgb(80, 70, 70);
+            height: 65px;
+            width: 100%;
+            top: 3200px;
+            left: 60px;
+            font-size: 30px;
+            padding-left: 30px;
+            padding-top: 15px;
+            border: 1px solid black;
+        }
+        .b2{
+            position: absolute;
+            background-color: white;
+            color: rgb(80, 70, 70);
+            height: 65px;
+            width: 100%;
+            top: 3300px;
+            left: 60px;
+            font-size: 30px;
+            padding-left: 30px;
+            padding-top: 15px;
+            border: 1px solid black;
+        }
+        .b3{
+            position: absolute;
+            background-color: white;
+            color: rgb(80, 70, 70);
+            height: 65px;
+            width: 100%;
+            top: 3400px;
+            left: 60px;
+            font-size: 30px;
+            padding-left: 30px;
+            padding-top: 15px;
+            border: 1px solid black;
+        }
+        .b4{
+            position: absolute;
+            background-color: white;
+            color: rgb(80, 70, 70);
+            height: 65px;
+            width: 100%;
+            top: 3500px;
+            left: 60px;
+            font-size: 30px;
+            padding-left: 30px;
+            padding-top: 15px;
+            border: 1px solid black;
+        }
+        .b5{
+            position: absolute;
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 300px;
+            top: 3640px;
+            left: 60px;
+            font-size: 30px;
+            padding-left: 35px;
+            padding-top: 7px;
+            border: 1px solid black;
+        }
+        .lastimage{
+            position: absolute;
+            top: 3800px;
+            width: 100%;
+        }
+        .lastbox{
+            position: absolute;
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 100px;
+            width: 100%;
+            top: 4650px;
+            padding-top: 33px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><b>BR</b> Architects</div>
+        <div class="l1">Projects</div>
+        <div class="l2">About</div>
+        <div class="l3">Contact</div>
+        <div class="img1"><div class="text">BR Architects</div>
+        <img src="https://media.istockphoto.com/id/511061090/photo/business-office-building-in-london-england.jpg?s=612x612&w=0&k=20&c=nYAn4JKoCqO1hMTjZiND1PAIWoABuy1BwH1MhaEoG6w=" alt="image not found" width="100%" height="778px">
+    </div>
+        <div class="projects">Projects
+            <div class="imag1"><img src="https://www.w3schools.com/w3images/house5.jpg" alt="image not found" height="350px" width="430px"></div>
+            <div class="imag2"><img src="https://www.w3schools.com/w3images/house2.jpg" alt="image not found" height="350px" width="430px"></div>
+            <div class="imag3"><img src="https://www.w3schools.com/w3images/house3.jpg" alt="image not found" height="350px" width="430px"></div>
+            <div class="imag4"><img src="https://www.w3schools.com/w3images/house4.jpg" alt="image not found" height="350px" width="430px"></div>
+            <div class="imag5"><img src="https://www.w3schools.com/w3images/house2.jpg" alt="image not found" height="350px" width="430px"></div>
+            <div class="imag6"><img src="https://www.w3schools.com/w3images/house5.jpg" alt="image not found" height="350px" width="430px"></div>
+            <div class="imag7"><img src="https://www.w3schools.com/w3images/house4.jpg" alt="image not found" height="350px" width="430px"></div>
+            <div class="imag8"><img src="https://www.w3schools.com/w3images/house3.jpg" alt="image not found" height="350px" width="430px"></div>
+        </div>
+        <div class="about">About <br> <br>
+            <div class="para"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste perferendis necessitatibus sunt perspiciatis iure rerum numquam consequatur sit ullam harum vero vitae voluptas velit sed fugiat, a earum, magni vel nesciunt excepturi laboriosam quaerat. Quae labore autem officia deleniti aspernatur aliquam est non natus voluptas ducimus omnis eius voluptatum molestias voluptate voluptates suscipit nostrum alias incidunt, facere assumenda maxime dicta placeat, reprehenderit accusantium. Consectetur veniam ducimus, vitae placeat nostrum id quo impedit. Fugiat inventore accusamus tempora perferendis eligendi, et fuga velit rem at mollitia dolor? Omnis sunt rerum adipisci, et velit inventore eligendi incidunt aspernatur illo, esse, dolorem aliquam hic.</p></div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="" height="450px" width="400px">
+                    </div>
+                <div class="content">
+                    <h2>John Doe</h2><br>
+                    <h4>CEO & Founder</h4><br>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, cumque.</h4>
+                </div>
+            </div>
+       
+            <div class="box1">
+                <div class="image1">
+                    <img src="https://www.w3schools.com/w3images/team1.jpg" alt="" height="450px" width="420px">
+                    </div>
+            <div class="content">
+                <h2>Jane Doe</h2><br>
+                <h4>Architect</h4><br>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, fugit.</h4>
+            </div>
+            </div>
+       
+            <div class="box2">
+                <div class="image2">
+                    <img src="https://www.w3schools.com/w3images/team3.jpg" alt="" height="450px" width="420px">
+                    </div>
+            <div class="content">
+                <h2>Mike Ross</h2><br>
+                <h3>Architect</h3><br>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dicta!</h4>
+            </div>
+            </div>
+       
+            <div class="box3">
+                <div class="image3">
+                    <img src="https://www.w3schools.com/w3images/team4.jpg" alt="" height="450px" width="420px">
+                    </div>
+            <div class="content">
+                <h2>Dan Star</h2><br>
+                <h3>Architect</h3><br>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorem.</h4>
+            </div>
+            </div>
+        </div>
+        <div class="line1">Contact</div>
+        <div class="line2">Lets get in touch and talk about your next project.</div>
+        <div class="b1">Name</div>
+        <div class="b2">Email</div>
+        <div class="b3">Subject</div>
+        <div class="b4">Comment</div>
+        <div class="b5">SEND MESSAGE</div>
+        <div class="lastimage"><img src="https://www.w3schools.com/w3images/map.jpg" alt="" height="850px" width="100%"></div>
+        <div class="lastbox">Powered by <u>w3.css</u></div>
+    </div>
+</body>
+</html>
